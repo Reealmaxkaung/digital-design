@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+body {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    margin-top: 100px;
+    width: 450px;
+    height: auto;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+
+.label {
+    padding: 20px 130px;
+    font-size: 35px;
+    color: rgb(15, 62, 217);
+}
+.login_form{
+    padding: 20px 40px;
+}
+.login_form .cap{
+    font-size: 18px;
+    color: rgb(227, 97, 26);
+    margin: 5px 0;
+}
+.login_form input{
+    height: 40px;
+    width: 350px;
+    padding: 0 5px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid silver;
+}
+.login_form .cap2{
+    margin-top: 30px;
+}
+.login_form button{
+    margin: 45px 0 30px 0;
+    height: 45px;
+    width: 365px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    background: rgb(15, 62, 217);
+    border-radius: 3px;
+    border: 1px solid black;
+    transition: 0.1s;
+}
+.login_form button:hover{
+    background: rgb(227, 97, 26);
+}
+.login_form #email_error, .login_form #pass_error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+}
+@media(max-width:360px){
+    .container{
+        width: 400px;
+    }
+    .label{
+        padding: 10px 100px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .login_form button{
+        margin: 20px 10px 10px 0;
+        height: 45px;
+        width: 200px;
+        font-size: 20px;
+    }
+}
