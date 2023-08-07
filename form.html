@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="x-icon" href="image/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap" rel="stylesheet">
+     <!-- Fonts -->
+    <title>The-Max Creation</title>
+</head>
+<body>
+   <div class="container">
+        <h1 class="label">Sign Up</h1>
+        <form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+            <div class="cap">Email</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id="email_error">Please fill up your Email</div>     
+            <div class="cap cap2">Password</div>
+            <input type="password" name="password">
+            <div id="pass_error">Please fill up your Password</div>  
+            <button type="submit">Sumbit</button>
+        </form>
+   </div>
+   <script src="form.js"></script>
+</body>
+</html>
